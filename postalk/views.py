@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
-def hello_world(request):
-    return render(request, 'postalk/hello_world.html', {})
+
+def hello_postalk(request):
+    return render(request, 'postalk/hello_postalk.html', {})

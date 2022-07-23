@@ -2,5 +2,5 @@ from django.urls import path
 from postalk import views
 
 urlpatterns = [
-    path('', views.hello_world, name='hello_world'),
+    path('', views.hello_postalk, name='hello_postalk'),
 ]
