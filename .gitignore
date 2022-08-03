@@ -1,3 +1,5 @@
 /postalk_django
 __pycache__/
 migrations/
+script.py.mako
+.DS_Store
