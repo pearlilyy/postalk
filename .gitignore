@@ -3,3 +3,4 @@ __pycache__/
 migrations/
 script.py.mako
 .DS_Store
+env.py
