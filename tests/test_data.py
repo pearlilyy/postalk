@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+
 class User(db.Model):
     __tablename__ = "users"
 
@@ -17,16 +18,6 @@ class User(db.Model):
     reg_date = db.Column(db.DateTime, nullable=False,
                          default=datetime.datetime.utcnow)
     picture = db.Column(db.String)
-    # follower = db.relationship(
-    #     'followings', backref='user_id', cascade='all,delete')
-    # following = db.relationship(
-    #     'followings', backref='following_id', cascade='all,delete')
-    # post = db.relationship('posts', backref='user_id', cascade='all,delete')
-    # mypage = db.relationship(
-    #     'mypages', backref='user_id', cascade='all,delete')
-    # comment = db.relationship(
-    #     'comments', backref='commenter_id', cascade='all,delete')
-    # like = db.relationship('likes', backref='user_id', cascade='all,delete')
 
     def __init__(self, username: str, password: str, first_name: str, last_name: str, email: str, phone: str, picture: str):
         self.username = username
@@ -99,9 +90,6 @@ class Post(db.Model):
     location = db.Column(db.String(50))
     post_date = db.Column(db.DateTime, nullable=False,
                           default=datetime.datetime.utcnow)
-    # like = db.relationship('likes', backref='post_id', cascade='all,delete')
-    # comment = db.relationship(
-    #     'comments', backref='post_id', cascade='all,delete')
 
     def __init__(self, user_id: int, note: str, photo: str, location: str):
         self.user_id = user_id
