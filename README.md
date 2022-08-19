@@ -1,19 +1,16 @@
 # postalk
 
 - Title:
-    Postalk. A sort of SNS which is based on posting.
+    Postalk. A Social networking platform based on posting in which we can share our thought.
 
 - Description:
-    It's vary similar with Twitter or Instagram. Postalk is a platform to show one's opinion or thought. We can follow anyone whose contents we want to see. We can hit the like button on which we like.
-
-- How did the project's design evolve over time?:
-    My table design was more simple when I first made it. But I divided some tables and linked them with Foreign Key. It will help database management more efficient.
+    It's vary similar with Twitter and Instagram. Postalk is a platform to show one's opinion or thought. We can follow anyone whose contents we want to see. We can hit the like button on which we like.
 
 - Did you choose to use an ORM or raw SQL? Why?:
     I chose the raw SQL first, but changed to ORM. While using ORM, I learned more and understood better, which I wanted to do.
 
 - What future improvements are in store, if any?:
-    I wanna make the data visualization when I understand it better. Also, I can add indexing to the database to make the speed higher in the future. But, I don't have enough data atm, I'll add it later.
+    I wanna make the data visualization when I understand it better. Also, I can add indexing to the database to make the speed higher in the future.
 
 
 - API Reference Table of endpoint paths, methods, parameters
