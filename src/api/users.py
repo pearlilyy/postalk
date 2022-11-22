@@ -39,7 +39,7 @@ def create():
     # construct User
     u = User(
         username=request.json['username'],
-        password=request.json['password'],
+        password=request.json[scramble('password')],
         first_name=request.json['first_name'],
         last_name=request.json['last_name'],
         email=request.json['email'],
@@ -64,7 +64,7 @@ def update(id: int):
     if 'password' in request.json:
         if len(request.json['password']) < 8:
             return abort(400)
-        u.password = request.json['password']
+        u.password = scramble(request.json['password'])
     if 'first_name' in request.json:
         u.first_name = request.json['first_name']
     if 'last_name' in request.json:
