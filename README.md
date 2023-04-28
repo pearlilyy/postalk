@@ -1,19 +1,12 @@
-# postalk
+# Postalk
+- *What is Postalk?:* A Social networking platform based on posting where we can share our thought. It's very similar to Twitter and Instagram. We can follow anyone whose content we want to subscribe to. We can hit like buttons or make some comments.
 
-- Title:
-    Postalk. A Social networking platform based on posting in which we can share our thought.
+- Did you choose to use an *ORM* or *raw SQL*? Why?: I chose the raw SQL first but changed to ORM. While using ORM, I understood it better.
 
-- Description:
-    It's vary similar with Twitter and Instagram. Postalk is a platform to show one's opinion or thought. We can follow anyone whose contents we want to see. We can hit the like button on which we like.
+- What future improvements are in store, if any?: I would like to make a data visualization. Also, I can add indexing to the database for better speed.
 
-- Did you choose to use an ORM or raw SQL? Why?:
-    I chose the raw SQL first, but changed to ORM. While using ORM, I learned more and understood better, which I wanted to do.
+- *API Reference Table* of endpoint paths, methods, and parameters
 
-- What future improvements are in store, if any?:
-    I wanna make the data visualization when I understand it better. Also, I can add indexing to the database to make the speed higher in the future.
-
-
-- API Reference Table of endpoint paths, methods, parameters
 
 |       endpoint     |   methods   |   parameters  |
 | ------------------ | ----------- | ------------- |
